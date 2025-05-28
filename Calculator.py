@@ -2,7 +2,9 @@ print("Welcome to my calculator")
 
 operator = input('Which operator (q to quit): ')
 
-while  not operator == "q" :
+ops = ['+','-','/','x']
+
+while  not operator == "q" and operator == '+'or'-'or'/'or'x':
     if operator == '+':
         def add():
             num1 = int(input('Pls enter the first number: '))
@@ -12,7 +14,7 @@ while  not operator == "q" :
         print(add())
         operator = input('Which operator (q to quit): ')# Call the function using parentheses
 
-    if operator == '-':
+    elif operator == '-':
         def sub():
             num1 = int(input('Pls enter the first number: '))
             num2 = int(input('Pls enter the second number: '))
@@ -21,7 +23,7 @@ while  not operator == "q" :
         print(sub())
         operator = input('Which operator (q to quit): ')# Call the function using parentheses
 
-    if operator == 'x':
+    elif operator == 'x':
         def expo():
             num1 = int(input('Pls enter the first number: '))
             num2 = int(input('Pls enter the second number: '))
@@ -30,7 +32,7 @@ while  not operator == "q" :
         print(expo())
         operator = input('Which operator (q to quit): ')# Call the function using parentheses
 
-    if operator == '/':
+    elif operator == '/':
         def div():
             num1 = int(input('Pls enter the first number: '))
             num2 = int(input('Pls enter the second number: '))
@@ -38,4 +40,8 @@ while  not operator == "q" :
 
         print(div())
         operator = input('Which operator (q to quit): ')# Call the function using parentheses
+    else:
+        print('invalid input') 
+        break
+
 print('bye')
