@@ -38,3 +38,4 @@ while  not operator == "q" :
 
         print(div())
         operator = input('Which operator (q to quit): ')# Call the function using parentheses
+print('bye')
